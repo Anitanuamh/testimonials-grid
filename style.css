@@ -1,0 +1,265 @@
+:root{
+--PaleViolet:hsl(276,100%,81%);
+--ModerateViolet:hsl(276,55%,52%);
+--DesaturatedDarkViolet:hsl(271,15%,43%);
+--GrayishBlue:hsl(206,6%,79%);
+--VeryDarkDesaturatedViolet:hsl(271,36%,24%);
+--DarkGrayishViolet:hsl(270,7%,64%);
+--LightMagenta: hsl(293, 100%, 63%); 
+--LightViolet: hsl(264, 100%, 61%);
+--White: hsl(0, 0%, 100%);
+--LightGrayishViolet: hsl(270, 20%, 96%);
+--VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+--VeryLightMagenta: hsl(289, 100%, 72%);
+}
+* {
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: var(--LightGrayishViolet);
+    display: flex;
+    margin: 0;
+    align-items: center;
+    overflow: hidden;
+}
+.left-illustration {
+    width: 450px;
+    height: 650px;
+    background:linear-gradient(-157deg,var(--LightMagenta),var(--LightViolet)) ;
+    border-radius: 0px 0px 220px 220px;
+    margin-left: -91px;
+}
+.device {
+    width: 300px;
+    height: 650px;
+    background-color: var(--White);
+    position: absolute;
+    left: 260px;
+    border-radius: 30px;
+    top: 30px;
+    box-shadow: 3px 5px 15px 0px #00000066;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.device .island {
+    width: 155px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: -2px;
+    border-radius: 0px 0px 20px 20px;
+}
+.app {
+    width: 90%;
+    height: 95%;
+    background-color: var(--LightGrayishViolet);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.app .chat-header {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to left, var(--LightMagenta), var(--LightViolet));
+    border-radius: 30px 30px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.profile .icon {
+    color: white;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+.profile .avatar {
+    width: 30px;
+    height: 30px;
+    background-image: url(./images/avatar.jpg);
+    border-radius: 50%;
+    border:1px solid white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+    margin-top:10px;
+}
+.profile .contact {
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.contact .name {
+    font-weight: 600;
+    font-size: 14px;
+}
+.contact .status {
+    font-size: 10px;
+    color: var(--GrayishBlue);
+    margin-top: 5px;
+}
+.profile .setting {
+    color: white;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}
+
+.app .chat {
+    width: 120px;
+    font-size: 10px;
+    margin: 10px 0px 0px 10px;
+    background-color: hsl(265.71deg 36.84% 92.55%);
+    color: var(--ModerateViolet);
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 15px;
+    line-height: 16px;
+}
+.app .chat:nth-child(3){
+    width: 161px;
+    padding-right: 0px;
+}
+
+
+.app .reply {
+    width: 150px;
+    font-size: 10px;
+    margin: 10px 0px 0px 90px;
+    background-color: white;
+    color: var(--DesaturatedDarkViolet);
+    padding: 10px;
+    border-radius: 15px;
+    line-height: 16px;
+}
+.max-right{
+    width: fit-content !important;
+    margin: 10px 0px 0px 160px !important;
+}
+
+.reply-img {
+    width: 120px;
+    margin: 10px 0px 0px 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat-img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.app .offer {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right, var(--LightMagenta), var(--LightViolet));
+    /* margin-bottom: 10px; */
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 15px 15px 15px 0px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-right: 10px;
+}
+.offer .circle {
+    width: 15px;
+    height: 15px;
+    border:1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.offer .title {
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.offer .price {
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    position: absolute;
+    right: 15px;
+    font-weight: 600;
+}
+
+.app .message {
+    width: 85%;
+    height: 50px;
+    background-color:hsl(0deg 0% 100%);
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    border:none;
+    padding-left: 20px;
+}
+.form-hoder{
+    position: relative;
+}
+.button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--VeryDarkDesaturatedViolet);
+    position: absolute;
+    top:15px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+::placeholder{
+    color: var(--GrayishBlue);
+}
+
+.right-container {
+    width: 600px;
+    height: 200px;
+    margin-left: 250px;
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+}
+.title-body {
+    margin-top: 40px;
+    font-size: 41px;
+    font-weight: 600;
+    color: var(--VeryDarkDesaturatedViolet);
+}
+.desc {
+    width: 443px;
+    text-align: left;
+    margin-left: 130px;
+    margin-top: 30px;
+    color: var(--DarkGrayishViolet);
+    line-height: 25px;
+}
+
+.right-illustration {
+    width: 450px;
+    height: 650px;
+    background-color:hsla(268, 7%, 64%, 0.067) ;
+    border-radius: 220px 220px 0px 0px;
+    position: absolute;
+    right:-50px;
+    bottom: 0;
+    z-index: -1;
+    
+}

@@ -1,0 +1,322 @@
+:root{
+  --Moderateviolet: hsl(263, 55%, 52%);
+  --Verydarkgrayishblue: hsl(217, 19%, 35%);
+  --Verydarkblackishblue: hsl(219, 29%, 14%);
+  --Lightgray: hsl(0, 0%, 81%);
+  --Lightgrayishblue: hsl(210, 46%, 95%);
+  --White: hsl(0, 0%, 100%);
+
+}
+* {
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: var(--Lightgray);
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 100px  100px  100px  100px  100px  100px;
+    grid-template-columns: 100px  100px  100px  100px  100px  100px;
+    margin-top: 20px;
+}
+.container{
+    height: 240px;
+    width: 550px;
+    background-color: var(--Moderateviolet);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 100px;
+}
+.first-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;   
+}
+.first-grid .avatar{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/image-daniel.jpg);
+    border-radius: 50%;
+    border:1px solid white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+    margin-top:10px; 
+}
+.first-grid .contact{
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;  
+}
+.contact .name {
+    font-weight: 600;
+    font-size: 14px;
+}
+.contact .status {
+    font-size: 10px;
+    color: var(--GrayishBlue);
+    margin-top: 5px;
+    opacity: 50%;
+}
+.container .head{
+    color: var(--White);
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.container .body{
+    font-size: 13px;
+    color: var(--White) ;
+    opacity: 70%;
+    padding-left: 20px;
+    line-height: 20px;
+}
+
+.container-1{
+    height: 240px;
+    width: 300px;
+    background-color: var(--Verydarkgrayishblue);
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 6;
+    grid-column-end: 6;
+    margin-left: 170px;
+}
+.second-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;   
+}
+.second-grid .avatar-1{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/image-jonathan.jpg);
+    border-radius: 50%;
+    border:1px solid white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+    margin-top:10px; 
+}
+.second-grid .contact-1{
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;  
+}
+.contact-1 .name-1 {
+    font-weight: 600;
+    font-size: 14px;
+}
+.contact-1 .status-1 {
+    font-size: 10px;
+    color: var(--GrayishBlue);
+    margin-top: 5px;
+    opacity: 50%;
+}
+.container-1 .head-1{
+    color: var(--White);
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.container-1 .body-1{
+    font-size: 13px;
+    color: var(--White) ;
+    opacity: 70%;
+    padding-left: 20px;
+    line-height: 20px;
+}
+
+.container-2{
+    height: 560px;
+    width: 280px;
+    background-color: var(--White);
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 6;
+    grid-column-end: 6;
+    margin-left: 500px;
+}
+.third-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;   
+}
+.third-grid .avatar-2{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/image-kira.jpg);
+    border-radius: 50%;
+    border:1px solid white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+    margin-top:10px; 
+}
+.third-grid .contact-2{
+    color: #000;
+    margin-left: 10px;
+    margin-top: 10px;  
+}
+.contact-2 .name-2 {
+    font-weight: 600;
+    font-size: 14px;
+}
+.contact-2 .status-2 {
+    font-size: 10px;
+    color: var(--GrayishBlue);
+    margin-top: 5px;
+    opacity: 50%;
+}
+.container-2 .head-2{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.container-2 .body-2{
+    font-size: 13px;
+    color: #000 ;
+    opacity: 70%;
+    padding-left: 20px;
+    line-height: 20px;
+}
+
+.container-3{
+    height: 240px;
+    width: 300px;
+    background-color: var(--White);
+    grid-row-start: 5;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 110px;
+}
+.fourth-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;   
+}
+.fourth-grid .avatar-3{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/image-jeanette.jpg);
+    border-radius: 50%;
+    border:1px solid white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+    margin-top:10px; 
+}
+.fourth-grid .contact-3{
+    color: #000;
+    margin-left: 10px;
+    margin-top: 10px;  
+}
+.contact-3 .name-3 {
+    font-weight: 600;
+    font-size: 14px;
+}
+.contact-3 .status-3 {
+    font-size: 10px;
+    color: var(--GrayishBlue);
+    margin-top: 5px;
+    opacity: 50%;
+}
+.container-3 .head-3{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.container-3 .body-3{
+    font-size: 13px;
+    color: #000 ;
+    opacity: 70%;
+    padding-left: 20px;
+    line-height: 20px;
+}
+
+
+.container-4{
+    height: 240px;
+    width: 550px;
+    background-color: var(--Verydarkblackishblue);
+    grid-row-start: 5;
+    grid-row-end: 4;
+    grid-column-start: 6;
+    grid-column-end: 5;
+    margin-left: 30px;
+}
+.firth-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;   
+}
+.firth-grid .avatar-4{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/image-patrick.jpg);
+    border-radius: 50%;
+    border:1px solid white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+    margin-top:10px; 
+}
+.firth-grid .contact-4{
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;  
+}
+.contact-4 .name-4 {
+    font-weight: 600;
+    font-size: 14px;
+}
+.contact-4 .status-4 {
+    font-size: 10px;
+    color: var(--GrayishBlue);
+    margin-top: 5px;
+    opacity: 50%;
+}
+.container-4 .head-4{
+    color: var(--White);
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.container-4 .body-4{
+    font-size: 13px;
+    color: var(--White) ;
+    opacity: 70%;
+    padding-left: 20px;
+    line-height: 20px;
+}
